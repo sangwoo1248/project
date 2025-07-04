@@ -354,3 +354,170 @@ body {
 .footer-info p {
   margin: 4px 0;
 }
+
+@media (max-width: 768px) {
+  .speech-bloom,
+  .speech-bloom2,
+  .speech-bloom3,
+  .speech-bloom4,
+  .speech-bloom5 {
+    width: 95%;
+    height: auto;
+    margin: 20px auto;
+  }
+
+  .bloom,
+  .bloom2,
+  .bloom3,
+  .bloom4,
+  .bloom5 {
+    width: 100%;
+    height: auto;
+  }
+
+  .bloom1 {
+    width: 80%;
+    top: 90px;
+  }
+
+  .poster {
+    width: 150px;
+    max-width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .bloom-text,
+  .bloom-text2 {
+    font-size: 16px;
+    left: 10px;
+    top: 20px;
+    padding: 10px;
+  }
+
+  .character {
+    width: 50px;
+  }
+
+  .project-text {
+    font-size: 16px;
+  }
+
+  .more-link,
+  .more-link2 {
+    font-size: 14px;
+    left: 10px;
+    bottom: -200px;
+  }
+
+  .footer-container {
+    padding-left: 10px;
+    font-size: 12px;
+  }
+
+  .footer-logo {
+    width: 80px;
+  }
+
+  .footer-sns img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .footer-info {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .logo {
+    width: 32px;
+    height: 32px;
+  }
+
+  .menu-icon {
+    margin-top: 0;
+    margin-right: 10px;
+    width: 25px;
+    height: 18px;
+  }
+
+  .speech-bloom,
+  .speech-bloom2,
+  .speech-bloom3,
+  .speech-bloom4,
+  .speech-bloom5 {
+    width: 95%;
+    height: auto;
+    margin: 20px auto;
+  }
+
+  .bloom,
+  .bloom2,
+  .bloom3,
+  .bloom4,
+  .bloom5 {
+    width: 100%;
+    height: auto;
+  }
+
+  .bloom1 {
+    width: 90%;
+    top: 80px;
+  }
+
+  .poster {
+    width: 130px;
+    max-width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .bloom-text,
+  .bloom-text2 {
+    font-size: 14px;
+    top: 15px;
+    left: 5px;
+    padding: 5px;
+  }
+
+  .character {
+    width: 40px;
+  }
+
+  .project-text {
+    font-size: 14px;
+  }
+
+  .more-link,
+  .more-link2 {
+    font-size: 12px;
+    left: 5px;
+    bottom: -180px;
+  }
+
+  .footer-container {
+    padding-left: 10px;
+    font-size: 11px;
+  }
+
+  .footer-logo {
+    width: 70px;
+  }
+
+  .footer-sns img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .footer-info {
+    padding-left: 15px;
+  }
+}
