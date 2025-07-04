@@ -152,16 +152,35 @@ body {
 
 .bloom-text2 {
   position: absolute;
-  top: 40px;
-  left: 30px;
+  top: 0px;
+  left: 10px;
+  gap: 10px;
   font-weight: bold;
   font-size: 18px;
   color: #333;
 }
 
+.character-text-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.character {
+  width: 80px;
+  height: auto;
+}
+
+.project-text {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.4;
+}
+
 .poster {
   position: absolute;
-  top: 110px; /* 말풍선 안 중앙 근처 */
+  top: 110px;
   left: 50%;
   transform: translateX(-50%);
   width: 300px;
