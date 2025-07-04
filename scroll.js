@@ -1,7 +1,7 @@
 let scrollDirection = 1; // 1 = 아래, -1 = 위
 
 function autoScrollLoop() {
-  window.scrollBy(0, scrollDirection * 1); // 1px씩 위 또는 아래로 스크롤
+  window.scrollBy(0, scrollDirection * 2);
 
   const scrollTop = window.scrollY;
   const scrollHeight = document.documentElement.scrollHeight;

@@ -144,20 +144,25 @@ body {
 .bloom2 {
   width: 100%;
   display: block;
-  /*position: relative;
-  width: 400px;
-  height: auto;
-  margin: 40px 40px 40px auto;*/
+  object-fit: contain;
 }
 
 .bloom-text2 {
-  position: absolute;
+  /*position: absolute;
   top: 0px;
-  left: 10px;
-  gap: 10px;
+  left: 15px;
   font-weight: bold;
   font-size: 18px;
-  color: #333;
+  color: #333;*/
+  /*position: relative;*/
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .character-text-wrap {
@@ -167,7 +172,7 @@ body {
 }
 
 .character {
-  width: 80px;
+  width: 60px;
   height: auto;
 }
 
@@ -176,15 +181,22 @@ body {
   font-size: 18px;
   color: #333;
   line-height: 1.4;
+  text-align: left;
 }
 
 .poster {
   position: absolute;
   top: 110px;
-  left: 50%;
+  left: 100%;
   transform: translateX(-50%);
-  width: 300px;
-  height: 250px;
+  width: 200px;
+  max-width: 80%;
+  align-items: center;
+  /*width: 200px;
+  max-width: 80%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;*/
 }
 
 .more-link2 {
@@ -192,7 +204,7 @@ body {
   text-decoration: none;
   color: black;
   position: absolute;
-  bottom: 0px;
+  bottom: -280px;
   left: 30px;
   text-decoration: none;
   color: black;
