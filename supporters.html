@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>서포터즈 신청</title>
+    <link rel="stylesheet" href="supporters.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="form-container">
+        <h2>서포터즈 신청서</h2>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="name">이름</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="이름을 입력하세요"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">연락처</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="010-1234-5678"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="program">신청 프로그램</label>
+            <select id="program" name="program" required>
+              <option value="">프로그램을 선택하세요</option>
+              <option value="심마니 프로젝트">심마니 프로젝트</option>
+              <option value="콘텐츠 제작">콘텐츠 제작</option>
+              <option value="기타">기타</option>
+            </select>
+          </div>
+          <button type="submit" class="submit-btn">신청하기</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

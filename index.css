@@ -162,8 +162,18 @@ main {
   font-weight: 500;
 }
 
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: -40px;
+}
+
 .program-section,
-.content-section {
+.content-section,
+.supporters-section {
   padding: 80px 20px 40px;
   background-color: #fff;
   display: flex;
@@ -446,6 +456,14 @@ main {
 
 .footer-info p {
   margin: 4px 0;
+}
+
+@media (max-width: 1024px) {
+  .section-title {
+    font-size: 24px;
+    margin-top: 80px;
+    margin-bottom: -30px;
+  }
 }
 
 @media (max-width: 768px) {
