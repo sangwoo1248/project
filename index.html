@@ -27,73 +27,52 @@
           <li><a href="#">소개</a></li>
           <li><a href="#">프로그램</a></li>
           <li><a href="#">콘텐츠</a></li>
-          <li><a href="#">문의</a></li>
+          <li><a href="#">고객센터</a></li>
         </ul>
       </div>
     </header>
 
     <main>
-      <div class="speech-bloom">
-        <img src="img/bloom.jpg" alt="말풍선" class="bloom" />
-        <div class="bloom-text">
-          WELCOME! 숨겨진 나를 찾아가는 여정
-          <br />
-        </div>
+      <section class="speech-container">
+        <p class="speech-title">WELCOME! 숨겨진 나를 찾아가는 여정</p>
         <a href="info.html">
-          <img src="img/logo2.png" alt="로고" class="bloom1" /><br />
+          <img src="img/logo2.png" alt="말풍선 이미지" class="bloom" />
         </a>
-        <a href="info.html" class="more-link">더보기></a>
-      </div>
+      </section>
 
       <h2 class="section-title">OUR PROJECT</h2>
-      <section class="program-section">
-        <div class="program-card">
-          <div class="program-image">
-            <img src="img/poster.jpg" alt="심마니 프로젝트 포스터" />
-          </div>
-          <div class="program-info">
-            <h2>심마니 프로젝트</h2>
-            <p>
-              숨어 있던 나를 발견하는 특별한 과정<br />함께 떠나는 자기 탐색의
-              여정
-            </p>
-            <a
-              href="https://smore.im/form/IigNh3Qx8p"
-              target="_blank"
-              class="program-btn"
-              >신청하기
-            </a>
-          </div>
+      <section class="slider-wrapper">
+        <div class="slider" id="slider">
+          <div class="slide"><img src="img/poster.jpg" alt="포스터1" /></div>
+          <div class="slide"><img src="img/star.jpg" alt="포스터2" /></div>
+          <div class="slide"><img src="img/poster.jpg" alt="포스터3" /></div>
+        </div>
+
+        <button class="slide-btn prev" id="prevBtn">&#10094;</button>
+        <button class="slide-btn next" id="nextBtn">&#10095;</button>
+
+        <div class="dots" id="dots">
+          <span class="dot" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
         </div>
       </section>
 
       <h2 class="section-title">CONTENTS</h2>
-      <section class="content-section">
-        <div class="program-card">
-          <div class="program-image">
-            <img src="img/poster.jpg" alt="심마니 프로젝트 포스터" />
-          </div>
-          <div class="program-info">
-            <h2>콘텐츠 소개</h2>
-            <p>
-              다양한 활동과 콘텐츠를 통해<br />
-              나를 알아가고 표현하는 시간을 가질 수 있어요.
-            </p>
-            <a href="#" class="program-btn">자세히 보기</a>
-          </div>
+      <section class="slider-wrapper">
+        <div class="slider" id="slider">
+          <div class="slide"><img src="img/poster.jpg" alt="포스터1" /></div>
+          <div class="slide"><img src="img/star.jpg" alt="포스터2" /></div>
+          <div class="slide"><img src="img/poster.jpg" alt="포스터3" /></div>
         </div>
-      </section>
 
-      <section class="supporters-section">
-        <div class="program-card">
-          <div class="program-image"></div>
-          <div class="program-info">
-            <h2>서포터즈</h2>
-            <p>
-              <a href="supporters.html" class="program-btn">신청하기</a>
-              <a href="info.html" class="program-btn">더보기</a>
-            </p>
-          </div>
+        <button class="slide-btn prev" id="prevBtn">&#10094;</button>
+        <button class="slide-btn next" id="nextBtn">&#10095;</button>
+
+        <div class="dots" id="dots">
+          <span class="dot" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
         </div>
       </section>
     </main>
@@ -140,35 +119,44 @@
 
     <footer class="footer">
       <div class="footer-container">
-        <!-- 로고 + SNS 아이콘을 가로로 정렬 -->
-        <div class="footer-top">
-          <img src="img/logo2.png" alt="Root 로고" class="footer-logo" />
-          <div class="footer-sns">
-            <a
-              href="https://www.instagram.com/root.office_?igsh=djF5cGo0bGtnZm1l"
-              target="_blank"
-            >
-              <img src="img/instar.jpg" alt="인스타그램" />
-            </a>
-            <a href="https://pf.kakao.com/_yourchannel" target="_blank">
-              <img src="img/ca.png" alt="카카오톡 채널" />
-            </a>
+        <div class="footer-left">
+          <div class="footer-logo-sns">
+            <img src="img/logo2.png" alt="Root 로고" class="footer-logo" />
+            <div class="footer-sns">
+              <a
+                href="https://www.instagram.com/root.office_?igsh=djF5cGo0bGtnZm1l"
+                target="_blank"
+              >
+                <img src="img/instar.jpg" alt="인스타그램" />
+              </a>
+              <a href="https://pf.kakao.com/_yourchannel" target="_blank">
+                <img src="img/ca.png" alt="카카오톡 채널" />
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-info">
+            <p><strong>root</strong> | 대표이사 주연희</p>
+            <p>사업자번호 | 전화번호 031-733-2523</p>
+            <p>경기도 성남시 분당구 정자일로 156번길 11 세명타워 4층</p>
+            <p>&copy; root all rights reserved</p>
           </div>
         </div>
 
-        <!-- 텍스트 정보 -->
-        <div class="footer-info">
-          <p><strong>root</strong> | 대표이사 주연희</p>
-          <p>
-            사업자번호 | 전화번호 031-733-2523 | 경기도 성남시 분당구 정자일로
-            156번길 11 세명타워 4층
-          </p>
-          <p>&copy; root all rights reserved</p>
+        <!-- 오른쪽: 메뉴 -->
+        <div class="footer-right">
+          <ul class="footer-menu">
+            <li><a href="#">서비스 소개</a></li>
+            <li><a href="#">콘텐츠</a></li>
+            <li><a href="#">프로그램</a></li>
+            <li><a href="#">문의하기</a></li>
+            <li><a href="#">고객센터</a></li>
+          </ul>
         </div>
       </div>
     </footer>
-
     <script src="index.js"></script>
     <!--<script src="scroll.js"></script>-->
+    <script src="slide.js"></script>
   </body>
 </html>
