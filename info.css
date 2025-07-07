@@ -75,7 +75,7 @@
 
 .speech-bubble-image {
   position: relative;
-  width: 400px; /* 말풍선 이미지 크기 */
+  width: 400px; 
   margin: 0 auto;
 }
 
@@ -95,28 +95,67 @@
   font-size: 18px;
 }
 
+.form-section-with-logo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #fcd9df;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+  gap: 40px;
+  position: relative;
+}
+
+.vertical-line {
+  width: 2px;
+  background-color: #333;
+  height: 100%;
+  min-height: 300px;
+  margin: 0 20px;
+}
+
 .form-section {
-  padding: 40px 20px;
-  max-width: 500px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 700px;
 }
 
-.form-group {
-  margin-bottom: 30px;
+.info-box {
+  background-color: #eeced4;
+  border-radius: 20px;
+  padding: 25px 30px;
+  box-shadow: none;
 }
 
-.form-group label {
-  display: block;
-  font-size: 18px;
+.info-box h3 {
+  font-size: 22px;
   font-weight: bold;
-  margin-bottom: 10px;
-  color: #006633;
+  margin-bottom: 15px;
 }
 
-.form-group input {
-  width: 100%;
-  padding: 12px 16px;
+.info-box p {
   font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  line-height: 1.6;
+}
+
+.logo-bubble {
+  position: relative;
+  width: 240px;
+  margin-top: 40px;
+}
+
+.logo-bubble img {
+  width: 100%;
+  display: block;
+}
+
+.logo-bubble .est {
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  font-size: 14px;
+  color: #006633;
 }
