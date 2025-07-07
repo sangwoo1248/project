@@ -148,10 +148,10 @@ main {
 
 .slider-wrapper {
   position: relative;
-  width: 100vw; /* ✅ 뷰포트 전체 너비 */
+  width: 100vw;
   height: auto;
   aspect-ratio: 16 / 4;
-  margin: 0; /* ✅ 여백 제거 */
+  margin: 0;
   padding: 0;
   overflow: hidden;
   border: none;
@@ -160,10 +160,10 @@ main {
 
 .content-wrapper {
   position: relative;
-  width: 100vw; /* ✅ 뷰포트 전체 너비 */
+  width: 100vw;
   height: auto;
   aspect-ratio: 16 / 4;
-  margin: 0; /* ✅ 여백 제거 */
+  margin: 0;
   padding: 0;
   overflow: hidden;
   border: none;
@@ -190,8 +190,8 @@ main {
 
 .slide img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   display: block;
 }
 
@@ -199,13 +199,13 @@ main {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.7);
   border: none;
   font-size: 30px;
   padding: 5px 10px;
   cursor: pointer;
   z-index: 10;
-  border-radius: 50%;
+  border-radius: 0;
+  background-color: transparent;
 }
 
 .slide-btn.prev {
@@ -306,8 +306,8 @@ main {
 .supporter-box::before {
   content: "";
   position: absolute;
-  top: 0; /* ✅ 상단 보더선과 맞춤 */
-  bottom: 0; /* ✅ 하단 보더선과 맞춤 */
+  top: 0;
+  bottom: 0;
   left: 50%;
   width: 1px;
   background-color: #ccc;
