@@ -84,3 +84,93 @@
 .menu-list li:hover {
   background-color: #f5f5f5;
 }
+
+.circle-image-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 120px 20px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.circle-item {
+  display: flex;
+  align-items: center;
+  background: #f7f7f7;
+  border-radius: 80px;
+  padding: 40px 50px;
+  gap: 40px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.circle-image {
+  flex-shrink: 0;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  padding: 6px;
+  background: linear-gradient(135deg, #66ccff, #a6f3d4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  background: white;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.circle-text1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+}
+
+.circle-text2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+}
+
+.circle-text3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+}
+
+.scroll-fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
+}
+
+.scroll-fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .circle-item {
+    flex-direction: column;
+    text-align: center;
+    border-radius: 20px;
+  }
+
+  .circle-image {
+    margin-bottom: 20px;
+  }
+}
