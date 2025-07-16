@@ -173,8 +173,8 @@ main {
 
 .slider {
   display: flex;
-  width: 100%;
-  height: 100%;
+  width: 1200px;
+  height: 400px;
   transition: transform 0.5s ease-in-out;
 }
 
