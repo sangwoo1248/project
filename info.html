@@ -4,7 +4,7 @@
       <div class="header-wrapper">
         <div class="logo-container">
           <RouterLink to="/">
-            <img src="@/assets/logo.jpg" alt="로고" class="logo" />
+            <img src="img/logo.jpg" alt="로고" class="logo" />
           </RouterLink>
         </div>
         <div class="menu-icon" @click="toggleMenu">
@@ -85,37 +85,3 @@
     </section>
   </div>
 </template>
-
-<script>
-  export default {
-    name: "InfoPage",
-    data() {
-      return {
-        menuActive: false,
-      };
-    },
-    methods: {
-      toggleMenu() {
-        this.menuActive = !this.menuActive;
-      },
-    },
-  };
-</script>
-
-<style scoped>
-  @import "@/assets/info.css";
-
-  .header-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .menu-icon {
-    margin-left: auto;
-  }
-
-  .intro-section {
-    margin-top: 80px;
-  }
-</style>
