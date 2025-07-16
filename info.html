@@ -1,40 +1,31 @@
-<!DOCTYPE html>
-<html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>루트</title>
-    <link rel="stylesheet" href="info.css" />
-  </head>
-  <body>
+<template>
+  <div>
     <header class="header">
       <div class="header-wrapper">
         <div class="logo-container">
-          <a href="index.html">
-            <img src="img/logo.jpg" alt="로고" class="logo" />
-          </a>
+          <RouterLink to="/">
+            <img src="@/assets/logo.jpg" alt="로고" class="logo" />
+          </RouterLink>
         </div>
-
-        <div class="menu-icon">
+        <div class="menu-icon" @click="toggleMenu">
           <span></span>
           <span></span>
           <span></span>
         </div>
       </div>
-
-      <div class="menu-list" id="menuList">
+      <div class="menu-list" :class="{ active: menuActive }">
         <ul>
-          <li><a href="#">소개</a></li>
-          <li><a href="#">프로그램</a></li>
-          <li><a href="#">콘텐츠</a></li>
-          <li><a href="#">고객센터</a></li>
+          <li><RouterLink to="/info">소개</RouterLink></li>
+          <li><RouterLink to="/project">프로그램</RouterLink></li>
+          <li><RouterLink to="/content">콘텐츠</RouterLink></li>
+          <li><RouterLink to="/customer">고객센터</RouterLink></li>
         </ul>
       </div>
     </header>
 
     <section class="intro-section">
       <div class="speech-bubble-image">
-        <img src="img/logo2.png" alt="말풍선" />
+        <img src="@/assets/logo2.png" alt="말풍선" />
       </div>
       <div class="description">
         <p>
@@ -55,7 +46,6 @@
       </div>
     </section>
 
-    <!-- 스크롤 아래 입력 영역 -->
     <section class="form-section-with-logo">
       <div class="form-section">
         <div class="info-box">
@@ -90,10 +80,42 @@
       <div class="vertical-line"></div>
 
       <div class="logo-bubble">
-        <img src="img/bloom1.png" alt="말풍선 로고" />
+        <img src="@/assets/bloom1.png" alt="말풍선 로고" />
       </div>
     </section>
+  </div>
+</template>
 
-    <script src="info.js"></script>
-  </body>
-</html>
+<script>
+  export default {
+    name: "InfoPage",
+    data() {
+      return {
+        menuActive: false,
+      };
+    },
+    methods: {
+      toggleMenu() {
+        this.menuActive = !this.menuActive;
+      },
+    },
+  };
+</script>
+
+<style scoped>
+  @import "@/assets/info.css";
+
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-icon {
+    margin-left: auto;
+  }
+
+  .intro-section {
+    margin-top: 80px;
+  }
+</style>
