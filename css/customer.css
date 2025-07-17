@@ -222,3 +222,79 @@ h1 {
 .faq-item.active .arrow {
   transform: rotate(180deg);
 }
+
+
+
+/* === 반응형 웹 추가 시작 === */
+
+@media (max-width: 768px) {
+  .header-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: 32px;
+    height: 32px;
+  }
+
+  .menu-icon {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  .support-container {
+    padding: 0 10px;
+  }
+
+  .info-cards {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .info-card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .faq-question {
+    font-size: 15px;
+  }
+
+  .faq-answer {
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+  .info-card h3 {
+    font-size: 16px;
+  }
+
+  .info-card li {
+    font-size: 13px;
+  }
+
+  .square-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+/* === 반응형 웹 추가 끝 === */

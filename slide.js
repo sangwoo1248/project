@@ -36,5 +36,4 @@ function initSlider(sliderId, prevId, nextId, dotsId) {
 
 document.addEventListener("DOMContentLoaded", () => {
   initSlider("projectSlider", "projectPrev", "projectNext", "projectDots");
-  initSlider("contentSlider", "contentPrev", "contentNext", "contentDots");
 });
