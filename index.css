@@ -9,7 +9,6 @@ body {
 
 body {
   flex: 1;
-  background-color: #FFD8DF; 
 }
 
 main {
@@ -25,6 +24,7 @@ main {
   background: white;
   padding: 10px 0;
   border-bottom: 1px solid black;
+  background-color: #FFD8DF;
 }
 
 .header-wrapper {
@@ -153,7 +153,7 @@ main {
   width: 100vw;
   height: auto;
   aspect-ratio: 16 / 4;
-  /*aspect-ratio: 16 / 9;*/*
+  /*aspect-ratio: 16 / 9;*/
   /*aspect-ratio: 4 / 3;*/
   margin: 0;
   padding: 0;
@@ -161,7 +161,6 @@ main {
   /*border: none;*/
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  background-color: #FFD8DF;
 }
 
 .content-wrapper {
@@ -178,9 +177,7 @@ main {
   /*border: none;*/
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  background-color: #FFD8DF;
 }
-
 .slider {
   display: flex;
   width: 100%;
@@ -257,8 +254,6 @@ main {
   margin: 0 auto;
   overflow: hidden;
   position: relative;
-  background-color: #FFD8DF;
-
 }
 
 .supporter-box {
