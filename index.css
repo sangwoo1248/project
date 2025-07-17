@@ -5,11 +5,11 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
+  background-color: #FFD8DF;
 }
 
 body {
   flex: 1;
-  background-color: #FFD8DF; 
 }
 
 main {
@@ -160,7 +160,6 @@ main {
   /*border: none;*/
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  background-color: #FFD8DF;
 }
 
 .content-wrapper {
@@ -177,8 +176,6 @@ main {
   /*border: none;*/
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  background-color: #FFD8DF;
-}
 
 .slider {
   display: flex;
