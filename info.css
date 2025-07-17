@@ -176,6 +176,26 @@
   border-right: 3px solid #333;
 }*/
 
+@media (max-width: 1024px) {
+  .form-section-with-logo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  .form-section,
+  .logo-bubble {
+    max-width: 90%;
+  }
+
+  .logo-bubble img {
+    max-width: 220px;
+  }
+}
+
 @media (max-width: 900px) {
   .form-section-with-logo {
     flex-direction: column;
