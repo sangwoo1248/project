@@ -24,7 +24,7 @@ main {
   background: white;
   padding: 10px 0;
   border-bottom: 1px solid black;
-  background-color: #FFD8DF;
+  background-color: #ffd8df;
 }
 
 .header-wrapper {
@@ -134,7 +134,7 @@ main {
 }
 
 .bloom {
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   height: auto;
   margin-left: 50px;
