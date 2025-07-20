@@ -130,7 +130,7 @@ body {
   max-width: 800px;
   width: 90%;
   justify-content: center;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  /*box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);*/
   /*margin-bottom: 60px;*/
   margin-top: 10px;
   /*margin-bottom: 10px;*/
@@ -444,5 +444,3 @@ body {
     font-size: 13px;
   }
 }
-
-/* === 반응형 웹 추가 끝 === */

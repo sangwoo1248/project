@@ -85,6 +85,10 @@
   background-color: #f5f5f5;
 }
 
+body {
+  background-color: #ffd8df;
+}
+
 .circle-image-section {
   display: flex;
   flex-direction: column;
@@ -97,18 +101,19 @@
 .circle-item {
   display: flex;
   align-items: center;
-  background: #f7f7f7;
+  background: #ffd8df;
   border-radius: 80px;
   padding: 40px 50px;
   gap: 40px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
 .circle-image {
   flex-shrink: 0;
   width: 180px;
   height: 180px;
-  border-radius: 50%;
+  border-radius: 50%; /* ✅ 원형 컨테이너 */
+  overflow: hidden;
   padding: 6px;
   background: linear-gradient(135deg, #66ccff, #a6f3d4);
   display: flex;
@@ -117,11 +122,13 @@
 }
 
 .circle-image img {
+  aspect-ratio: 1 / 1; /* ✅ 정사각형 비율 강제 */
   width: 100%;
-  height: 100%;
+  height: auto; /* ✅ 비율 유지되게 */
   object-fit: cover;
   border-radius: 50%;
   background: white;
+  display: block;
 }
 
 .section-title {
@@ -144,27 +151,15 @@
   font-size: 30px;
   font-weight: bold;
   color: #333;
+  flex: 1;
 }
 
 .circle-text3 {
   font-size: 30px;
   font-weight: bold;
   color: #333;
+  flex: 1;
 }
-
-/*.circle-text1 h3 {
-  margin: 0 0 12px;
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #333;
-}
-
-.circle-text1 p {
-  margin: 0;
-  font-size: 1.05rem;
-  line-height: 1.6;
-  color: #444;
-}*/
 
 .scroll-fade-in {
   opacity: 0;
@@ -177,6 +172,28 @@
   transform: translateY(0);
 }
 
+.disabled {
+  filter: grayscale(100%);
+  pointer-events: none;
+  cursor: not-allowed;
+  position: relative;
+  opacity: 0.7;
+}
+
+.disabled:hover::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  /*background-image: url('../img/disabled.png');  */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 10;
+}
+
 @media (max-width: 768px) {
   .circle-item {
     flex-direction: column;
@@ -187,54 +204,20 @@
   .circle-image {
     margin-bottom: 20px;
   }
+
+  .circle-text1,
+  .circle-text2,
+  .circle-text3 {
+    align-items: center;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
 }
-
-
-
-/* === 반응형 웹 추가 시작 === */
 
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-@media (max-width: 768px) {
-  html { font-size: 15px; }
-
-  .container {
-    padding: 0 1rem;
-  }
-
-  .section-title {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-  .content-box,
-  .circle-item,
-  .supporter-left,
-  .supporter-right {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  html { font-size: 14px; }
-}
-
-/* === 반응형 웹 추가 끝 === */
