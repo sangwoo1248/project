@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>rootroute.kr</title>
+		<link><![CDATA[http://rootroute.kr/]]></link>
+		<description>숨겨진 나를 찾아가는 여정 - root</description>
+		<language>ko</language>
+		<pubDate>Mon, 21 Jul 2025 14:46:28 +0000</pubDate>
+		<generator>MySitemapGenerator (www.mysitemapgenerator.com)</generator>
+
+		<item>
+			<guid isPermaLink="false">4266576651</guid>
+			<title>서포터즈 신청</title>
+			<link>http://rootroute.kr/subscription</link>
+			<pubDate>Mon, 21 Jul 2025 17:46:27 +0300</pubDate>
+		</item>
+		<item>
+			<guid isPermaLink="false">3169860555</guid>
+			<title>서포터즈 신청</title>
+			<link>http://rootroute.kr/supporters</link>
+			<pubDate>Mon, 21 Jul 2025 17:46:26 +0300</pubDate>
+		</item>
+		<item>
+			<guid isPermaLink="false">3483202142</guid>
+			<title>루트</title>
+			<link>http://rootroute.kr/customer</link>
+			<pubDate>Mon, 21 Jul 2025 17:46:25 +0300</pubDate>
+		</item>
+		<item>
+			<guid isPermaLink="false">2975301467</guid>
+			<title>루트</title>
+			<link>http://rootroute.kr/project</link>
+			<pubDate>Mon, 21 Jul 2025 17:46:24 +0300</pubDate>
+			<enclosure url="http://rootroute.kr/img/poster.jpg" type="image/jpeg" length="0" />
+		</item>
+		<item>
+			<guid isPermaLink="false">1997633726</guid>
+			<title>루트</title>
+			<link>http://rootroute.kr/content</link>
+			<pubDate>Mon, 21 Jul 2025 17:46:23 +0300</pubDate>
+			<enclosure url="http://rootroute.kr/img/poster.jpg" type="image/jpeg" length="0" />
+		</item>
+		<item>
+			<guid isPermaLink="false">219530486</guid>
+			<title>ROOT 나의 뿌리</title>
+			<link>http://rootroute.kr/info</link>
+			<pubDate>Mon, 21 Jul 2025 17:46:22 +0300</pubDate>
+			<enclosure url="http://rootroute.kr/img/logo2.png" type="image/png" length="0" />
+		</item>
+	</channel>
+</rss>
