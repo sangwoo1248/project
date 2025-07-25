@@ -280,7 +280,7 @@ main {
   align-items: center; /* ✅ 세로 정렬 핵심 */
   justify-content: flex-start;
   gap: 15px;
-  height: 640px;
+  height: 100%;
 }
 
 .content-inner-box2 {
