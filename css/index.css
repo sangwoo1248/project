@@ -236,32 +236,40 @@ main {
   }
 }
 
-.content-wrapper {
+.program,
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.program-img,
+.content-img {
+  max-width: 90%;
+  height: auto;
+}
+
+/*.content-wrapper {
   position: relative;
   width: 100vw;
   height: auto;
-  /*aspect-ratio: 16 / 4;*/
-  /*aspect-ratio: 16 / 9;*/
-  /*aspect-ratio: 4 / 3;*/
-  overflow: visible; 
+  aspect-ratio: 16 / 4;
+  overflow: visible;
   margin: 0;
   padding: 0;
   overflow: hidden;
   margin-bottom: 30px;
-  /*border: none;*/
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
 
 .content-box {
-  /*display: flex;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: 40px;
-  flex-wrap: wrap;*/
-  display: flex;
-  flex-direction: column; /* ✅ 카드 2개 위아래로 정렬 */
-  gap: 0;
+  flex-wrap: nowrap;
 }
 
 .content-box::before {
@@ -275,22 +283,21 @@ main {
   transform: translateX(-50%);
 }
 
-/* 왼쪽 콘텐츠 */
 .content-inner-box {
   display: flex;
-  align-items: center; /* ✅ 세로 정렬 핵심 */
+  align-items: center;
   justify-content: flex-start;
   gap: 15px;
-  /*height: 100%;*/
-  min-height: 640px; /
+  height: 100%;
 }
 
 .content-inner-box2 {
   display: flex;
-  align-items: center; /* ✅ 세로 정렬 핵심 */
+  align-items: center;
   justify-content: flex-start;
+  width: 100%;
+  height: auto;
   gap: 15px;
-  height: 100%;
 }
 
 .poster-left {
@@ -301,41 +308,29 @@ main {
 }
 
 .poster-right {
+  flex: 0 0 auto;
   display: flex;
   justify-content: flex-start;
-  /*align-items: center;*/
-  height: 100%;
-  margin-left: 160px;
-}
-
-.content-image-left {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-.content-image-right {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-.text-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* ✅ 세로 가운데 */
-  align-items: flex-start;
-  gap: 10px;
   height: 100%;
 }
 
+.poster-left img,
+.poster-right img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.text-left,
 .text-right {
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 10px;
-  height: 100%;
+  padding-left: 20px; 
+  box-sizing: border-box;
 }
 
 .content-title {
@@ -354,31 +349,30 @@ main {
   border-radius: 8px;
   text-decoration: none;
   transition: background-color 0.3s;
-}
+}*/
 
-.supporter-section {
+.content-section {
   position: relative;
   width: 100vw;
   height: auto;
-  aspect-ratio: 16 / 4;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
 
-.supporter-box {
+.content-box {
   display: flex;
   width: 100%;
-  height: 100%;
-  align-items: center; /* 세로 가운데 정렬 */
+  height: auto;
+  align-items: center;
   justify-content: space-between;
   position: relative;
 }
 
-.supporter-box::before {
+.content-box::before {
   content: "";
   position: absolute;
   top: 0;
@@ -389,46 +383,22 @@ main {
   transform: translateX(-50%);
 }
 
-.supporter-left {
-  flex: 1;
-  min-width: 280px;
-  padding: 10px 20px 0 20px; /* ✅ 위쪽 padding 최소화 */
-  display: flex;
-  flex-direction: column;
+.poster-left,
+.poster-right {
+  padding-right: 20px;
+}
+
+.poster-left img,
+.poster-right img {
+  width: 100%;
   height: 100%;
-  justify-content: flex-start; /* ✅ 상단 정렬 */
-  align-items: flex-start; /* ✅ 왼쪽 정렬 */
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
-.supporter-left h2 {
-  font-size: 36px;
-  font-weight: bold;
-  margin: 0 0 10px 0;
-  color: #e60039;
-}
-
-.supporter-right {
-  flex: 1;
-  min-width: 280px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-
-.supporter-right img {
-  max-width: 35%;
-  max-height: 100%;
-  object-fit: contain;
-}
-
-.support-buttons {
-  margin-top: 20px;
-  display: flex;
-  gap: 12px;
-}
-
-.square-button {
+.apply-button {
   display: inline-block;
   padding: 10px 20px;
   border: 2px solid #333;
@@ -440,9 +410,94 @@ main {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.square-button:hover {
-  background-color: #333;
+.supporter-section {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-top: 10px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.supporter-box {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  object-fit: cover;
+}
+
+.supporter-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: black;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.supporter-left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  max-width: 960px;
+  padding-left: 0;
+  box-sizing: border-box;
+}
+
+.supporter-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 15px;
+  padding-left: 0;
+}
+
+.supporter-image {
+  width: auto;
+  height: 480px;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.supporter-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  word-break: keep-all;
+}
+
+.supporter-text h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #1a5632;
+}
+
+.supporter-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.square-button {
+  background-color: #1a5632;
   color: white;
+  padding: 10px 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
 }
 
 .footer {
@@ -650,4 +705,3 @@ main {
     width: auto;
   }
 }
-
