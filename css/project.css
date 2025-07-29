@@ -194,6 +194,18 @@ body {
   z-index: 10;
 }
 
+.apply-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  background-color: #1a5632;
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
 @media (max-width: 768px) {
   .circle-item {
     flex-direction: column;

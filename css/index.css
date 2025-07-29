@@ -432,18 +432,6 @@ main {
   object-fit: cover;
 }
 
-.supporter-box::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 2px;
-  background-color: black;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-
 .supporter-left {
   display: flex;
   flex-direction: column;
