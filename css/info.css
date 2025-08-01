@@ -247,14 +247,99 @@ body {
 
 .footer-menu li {
   margin-bottom: 8px;
-  text-align: right; /* 메뉴 항목 자체도 오른쪽 정렬 */
+  text-align: right;
 }
 
 .footer-menu a {
   text-decoration: none;
-  color: #333;
+  color: black;
 }
 
-.footer-menu a:hover {
-  text-decoration: underline;
+@media (max-width: 480px) {
+  /* 말풍선 이미지 */
+  .bloom {
+    max-width: 90%;
+    margin: 1rem auto 0;
+  }
+  /* 설명 텍스트 */
+  .description .title {
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 0 1rem;
+  }
+  /* 카드 + 로고 섹션 */
+  .info-section {
+    flex-direction: column;
+  }
+
+  /* 말풍선 로고를 카드 박스들 위로 올리기 */
+  .info-logo-box {
+    flex: 0 1 30%;
+    min-width: 800px;
+    text-align: center;
+  }
+
+  /* 텍스트 박스(카드) 순서는 기본(0) */
+  .info-text-box {
+    flex: 1 1 60%;
+    min-width: 250px;
+  }
+  /* 푸터 */
+  .footer-container {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+}
+
+/* Tablet: 481px ~ 1024px */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .bloom {
+    max-width: 70%;
+    margin: 2rem auto 0;
+  }
+  .description .title {
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 0 2rem;
+  }
+  .info-section {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem 0;
+  }
+  .info-card {
+    padding: 18px 25px;
+    font-size: 15px;
+  }
+  .speech-logo {
+    max-width: 250px;
+  }
+}
+
+/* Notebook/Desktop: 1025px 이상 */
+@media (min-width: 1025px) {
+  .bloom {
+    max-width: 800px;
+    margin: 3rem auto 0;
+  }
+  .description .title {
+    font-size: 20px;
+    line-height: 1.6;
+    padding: 0;
+  }
+  .info-section {
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    padding: 3rem 0;
+  }
+  .info-card {
+    padding: 20px 30px;
+    font-size: 16px;
+  }
+  .speech-logo {
+    max-width: 300px;
+  }
 }

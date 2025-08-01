@@ -1,3 +1,7 @@
+.body {
+  background-color: #ffd8df;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -7,6 +11,7 @@
   background: white;
   padding: 10px 0;
   border-bottom: 1px solid black;
+  background-color: white;
 }
 
 .header-wrapper {
@@ -85,82 +90,7 @@
   background-color: #f5f5f5;
 }
 
-body {
-  background-color: #ffd8df;
-}
-
-.circle-image-section {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  padding: 120px 20px 60px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.circle-item {
-  display: flex;
-  align-items: center;
-  background: #ffd8df;
-  border-radius: 80px;
-  padding: 40px 50px;
-  gap: 40px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-}
-
-.circle-image {
-  flex-shrink: 0;
-  width: 180px;
-  height: 180px;
-  border-radius: 50%; /* ✅ 원형 컨테이너 */
-  overflow: hidden;
-  padding: 6px;
-  background: linear-gradient(135deg, #66ccff, #a6f3d4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.circle-image img {
-  aspect-ratio: 1 / 1; /* ✅ 정사각형 비율 강제 */
-  width: 100%;
-  height: auto; /* ✅ 비율 유지되게 */
-  object-fit: cover;
-  border-radius: 50%;
-  background: white;
-  display: block;
-}
-
-.section-title {
-  text-align: center;
-  font-size: 50px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-top: 10px;
-  margin-bottom: 40px;
-  color: #222;
-}
-
-.circle-text1 {
-  font-size: 30px;
-  font-weight: bold;
-  color: #333;
-}
-
-.circle-text2 {
-  font-size: 30px;
-  font-weight: bold;
-  color: #333;
-  flex: 1;
-}
-
-.circle-text3 {
-  font-size: 30px;
-  font-weight: bold;
-  color: #333;
-  flex: 1;
-}
-
+/* fade-in 애니메이션 */
 .scroll-fade-in {
   opacity: 0;
   transform: translateY(40px);
@@ -173,37 +103,9 @@ body {
 }
 
 .disabled {
-  filter: grayscale(100%);
   pointer-events: none;
   cursor: not-allowed;
-  position: relative;
   opacity: 0.7;
-}
-
-.disabled:hover::after {
-  content: "";
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 100px;
-  height: 100px;
-  /*background-image: url('../img/disabled.png');  */
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 10;
-}
-
-.apply-button {
-  display: inline-block;
-  padding: 10px 20px;
-  border: 2px solid #333;
-  border-radius: 8px;
-  background-color: #1a5632;
-  color: #333;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background-color 0.3s, color 0.3s;
 }
 
 .footer {
@@ -300,30 +202,21 @@ body {
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-  .circle-item {
-    flex-direction: column;
-    text-align: center;
-    border-radius: 20px;
-  }
-
-  .circle-image {
-    margin-bottom: 20px;
-  }
-
-  .circle-text1,
-  .circle-text2,
-  .circle-text3 {
-    align-items: center;
-  }
-
-  .section-title {
-    font-size: 1.5rem;
-  }
+/* 프로젝트 카드 내 원형 이미지 */
+.rounded-circle img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: white;
 }
 
+/* 반응형 이미지 기본 */
 img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.footer img {
+  display: inline-block;
+  vertical-align: middle;
 }
