@@ -1,8 +1,4 @@
-html,
 body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
   background-color: #ffd8df;
 }
 
@@ -15,6 +11,7 @@ body {
   background: white;
   padding: 10px 0;
   border-bottom: 1px solid black;
+  background-color: white;
 }
 
 .header-wrapper {
@@ -61,7 +58,7 @@ body {
   top: 60px;
   right: 20px;
   background-color: white;
-  border: 1px solid #ccc;
+  border: 1px solid black;
   border-radius: 8px;
   display: none;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -93,108 +90,80 @@ body {
   background-color: #f5f5f5;
 }
 
-.intro-section {
-  display: flex;
-  flex-direction: column;
-  margin-top: 40px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-  background-color: #ffd8df;
-}
-.speech-bubble-image {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: 10px;
-}
-
-.speech-bubble-image img {
-  width: 800px;
+.bloom {
+  display: block;
+  margin: 0 auto; /* 가로 중앙 정렬 */
+  margin-top: 0 !important; /* 네비게이션과 바로 붙이기 */
+  max-width: 1000px;
+  width: 90%;
   height: auto;
 }
 
-.description {
+/*.description {
   background-color: #ffd8df;
   border: none;
   border-radius: 12px;
   padding: 30px;
-  max-width: 800px;
+  max-width: 1000px;
   width: 90%;
   justify-content: center;
   margin-top: 10px;
   text-align: justify;
+  margin-bottom: 100px;
   font-size: 20px;
-  margin: 12px 0;
   line-height: 1.2;
-}
+  margin-top: 1rem;
+}*/
 
-.title {
+.description .title {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #333;
+  margin: 1rem auto 0;
+  max-width: 1000px;
+  padding: 0 1rem;
   text-align: center;
-  font-size: 25px;
-  margin: 12px 0;
-  line-height: 1.2;
-  font-weight: bold;
+  margin-bottom: 150px;
 }
 
-.form-section-with-logo {
+.info-section {
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: white;
-  padding: 40px 0 0 0;
-  margin: 0;
-  margin-top: 50px;
-  width: 100vw;
-  height: auto;
-  box-sizing: border-box;
-  gap: 40px;
-  flex-wrap: wrap;
-  position: relative;
-  background-color: #ffd8df;
 }
 
-.form-section {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  max-width: 700px;
+.info-text-box {
   flex: 1;
+  max-width: 600px;
 }
 
-.info-sectiom {
+.info-card {
   background-color: #ffd8df;
+  padding: 20px 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-.info-box {
-  background-color: #ffd8df;
-  border-radius: 20px;
-  padding: 25px 30px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  margin-bottom: 20px;
+.info-card h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.logo-bubble {
-  position: relative;
-  width: 400px;
+.info-logo-box {
   display: flex;
-  left: 150px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-right: -100px;
+  max-width: 300px;
 }
 
-.vertical-line {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 500px;
-  left: 100%;
-  bottom: -150%;
-  transform: translateX(-50%);
-  border-right: 3px solid black;
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
+.speech-logo {
+  max-width: 600px;
+  height: auto;
+  filter: drop-shadow(4px 6px 6px rgba(0, 0, 0, 0.2));
+  margin-left: 50px;
 }
 
 .footer {
@@ -223,7 +192,6 @@ body {
   display: flex;
   align-items: center;
   margin-top: 60px;
-  /*margin-bottom: 5px;*/
 }
 
 .footer-left {
@@ -289,204 +257,4 @@ body {
 
 .footer-menu a:hover {
   text-decoration: underline;
-}
-
-/* 모바일: 최대 480px */
-@media (max-width: 480px) {
-  .speech-title {
-    font-size: 1.2rem;
-  }
-
-  .bloom {
-    width: 95%;
-    margin-left: 0;
-  }
-
-  .program-img,
-  .content-img {
-    height: 100px;
-  }
-
-  .content-inner-box {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .poster-left,
-  .poster-right {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .text-left,
-  .text-right {
-    align-items: center;
-    text-align: center;
-  }
-
-  .apply-button {
-    width: 100%;
-    text-align: center;
-  }
-
-  .slider-wrapper {
-    aspect-ratio: auto;
-    height: auto;
-  }
-
-  .slide img {
-    height: auto;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .speech-title {
-    font-size: 1.2rem;
-  }
-
-  .bloom {
-    width: 95%;
-    margin-left: 0;
-  }
-
-  .content-inner-box {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .poster-left,
-  .poster-right {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .text-left,
-  .text-right {
-    align-items: center;
-    text-align: center;
-  }
-
-  .apply-button {
-    width: 100%;
-    text-align: center;
-  }
-
-  .slider-wrapper {
-    aspect-ratio: auto;
-    height: auto;
-  }
-
-  .slide img {
-    height: auto;
-  }
-
-  .program-img,
-  .content-img {
-    height: 100px;
-    margin-bottom: 40px;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 1024px) {
-  .speech-title {
-    font-size: 1.5rem;
-  }
-
-  .content-inner-box {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .poster-left,
-  .poster-right {
-    width: 80%;
-    justify-content: center;
-  }
-
-  .text-left,
-  .text-right {
-    align-items: center;
-    text-align: center;
-  }
-
-  .apply-button {
-    width: 80%;
-    text-align: center;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
-@media (min-width: 1025px) {
-  .content-inner-box {
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 30px;
-  }
-
-  .poster-left,
-  .poster-right {
-    width: 45%;
-    justify-content: flex-start;
-  }
-
-  .text-left,
-  .text-right {
-    width: 50%;
-    text-align: left;
-    align-items: flex-start;
-  }
-
-  .program-img,
-  .content-img {
-    height: 100px;
-  }
-
-  .apply-button {
-    width: auto;
-  }
-}
-
-@media (max-width: 767px) {
-  body {
-    margin: 0;
-    padding: 0;
-  }
-
-  .program-img,
-  .content-img {
-    height: 100px;
-  }
-
-  footer {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-  }
-
-  html,
-  body {
-    height: auto;
-    overflow-x: hidden;
-  }
 }
