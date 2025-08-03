@@ -7,7 +7,13 @@
 
     <title>Root</title>
     <!--<link rel="stylesheet" href="index.css" />-->
-    <link rel="stylesheet" href="css/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/explanation.css" />
 
     <!-- 탭 아이콘 (favicon) -->
     <link rel="icon" type="image/jpg" href="img/favicon.png" />
@@ -29,34 +35,50 @@
   </head>
 
   <body>
-    <header class="header">
-      <div class="header-wrapper">
-        <div class="logo-container">
-          <a href="index.html">
-            <img src="img/favicon.png" alt="로고" class="logo" />
-          </a>
-        </div>
+    <nav class="navbar bg-light border-bottom">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center"
+      >
+        <a class="navbar-brand" href="index.html">
+          <img src="img/favicon.png" alt="로고" height="40" />
+        </a>
 
-        <div class="menu-icon">
-          <span></span>
-          <span></span>
-          <span></span>
+        <!-- 햄버거 버튼 -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="메뉴 열기"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- 메뉴 항목 -->
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-end pe-3">
+            <li class="nav-item">
+              <a class="nav-link" href="info.html">소개</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="project.html">프로그램</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="content.html">콘텐츠</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="customer.html">고객센터</a>
+            </li>
+          </ul>
         </div>
       </div>
-
-      <div class="menu-list" id="menuList">
-        <ul>
-          <li><a href="info.html">소개</a></li>
-          <li><a href="project.html">프로그램</a></li>
-          <li><a href="content.html">콘텐츠</a></li>
-          <li><a href="customer.html">고객센터</a></li>
-        </ul>
-      </div>
-    </header>
+    </nav>
 
     <main>
       <div>
-        <img src="img/poster.jpg" />
+        <img src="img/poster.jpg" class="img-fluid porster" />
         <p>
           심봤다~! <br />
           당신은 어떤 산삼이 디고 싶으신가요? 심마니 프로젝트는 숨겨있던 나의
@@ -64,9 +86,9 @@
           색을 통한 심리를 통해 나의 잠재력과 막혀있는 부분을 알아볼 수 있으며
           추적인 검사를 통해서 가치 분석지(ROOT_BOOK)를 제공해드립니다 :)
         </p>
-        <a href="supporters.html" class="apply-button"> 프로그램 신청하기 </a>
+        <a href="supporters.html" class="apply-button"> 프로그램 참여하기 </a>
       </div>
-      <div>
+      <div class="inline">
         <img src="img/inline.jpg" />
         <p>
           IN(side)-LINE 프로그램 <br />
@@ -75,7 +97,7 @@
           몰랐던 나의 무의식 궁금하지 않으신가요? 무의식의 심리로 나를 찾아
           떠나보아요
         </p>
-        <a href="supporters.html" class="apply-button"> 프로그램 신청하기 </a>
+        <a href="supporters.html" class="apply-button"> 프로그램 참여하기 </a>
       </div>
     </main>
 

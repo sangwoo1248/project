@@ -1,8 +1,10 @@
-.body {
+html,
+body {
+  overflow-x: hidden;
   background-color: #ffd8df;
 }
 
-.header {
+.container-fluid {
   position: fixed;
   top: 0;
   left: 0;
@@ -86,36 +88,31 @@
   display: block;
 }
 
-/* fade-in 애니메이션 */
-.scroll-fade-in {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.6s ease-out;
+main {
+  /* 헤더 높이(약 60px) + 원하시는 추가 간격(예: 20px) */
+  padding-top: 80px;
 }
 
-.scroll-fade-in.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* 프로젝트 카드 내 원형 이미지 */
-.rounded-circle img {
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  background: white;
-}
-
-/* 반응형 이미지 기본 */
-img {
-  max-width: 100%;
-  height: auto;
+.porster {
   display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 1rem;
 }
 
-.disabled {
-  pointer-events: none;
-  cursor: not-allowed;
-  opacity: 0.7;
+.apply-button {
+  display: inline-block; /* 버튼 모양으로 */
+  background-color: #1a5632; /* 진한 초록 배경 */
+  color: #fff; /* 흰색 글자 */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none; /* 밑줄 제거 */
+  padding: 0.75rem 1.5rem; /* 상하·좌우 여유 공간 */
+  font-size: 1rem; /* 읽기 좋은 크기 */
+  transition: background-color 0.3s; /* 부드러운 호버 효과 */
+  margin-bottom: 2rem; /* 버튼 아래 ↔ 푸터 여백 */
+  margin-left: 10px;
 }
 
 .footer {
@@ -125,21 +122,26 @@ img {
   z-index: 1000;
   background: white;
   padding: 10px 0;
+  border-top: 1px solid black;
 }
 
 .footer-container {
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  background: white;
-  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-left: 20px;
+  margin-right: 10px;
+  align-items: flex-start;
 }
 
 .footer-top {
   display: flex;
   align-items: center;
   margin-top: 60px;
+  /*margin-bottom: 5px;*/
 }
 
 .footer-left {
@@ -153,8 +155,9 @@ img {
 .footer-logo-sns {
   display: flex;
   align-items: center;
-  gap: 12px;
   margin-bottom: 10px;
+  margin-left: -15px;
+  padding-right: 10px;
 }
 
 .footer-logo {
@@ -173,7 +176,7 @@ img {
 }
 
 .footer-info {
-  padding-left: 30px;
+  padding-left: 10px;
 }
 
 .footer-info p {
@@ -184,7 +187,7 @@ img {
   flex: 0 0 auto;
   margin-left: auto;
   text-align: right;
-  margin-right: -600px;
+  margin-right: -500px;
 }
 
 .footer-menu {
@@ -195,7 +198,7 @@ img {
 
 .footer-menu li {
   margin-bottom: 8px;
-  text-align: right; /* 메뉴 항목 자체도 오른쪽 정렬 */
+  text-align: right;
 }
 
 .footer-menu a {
@@ -203,12 +206,14 @@ img {
   color: #333;
 }
 
-.footer img {
-  display: inline-block;
-  vertical-align: middle;
-}
-
 @media (max-width: 480px) {
+  main img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem; /* 선택: 이미지 아래 여백 추가 */
+  }
+
   .footer-container {
     display: flex;
     justify-content: space-between;
@@ -218,6 +223,7 @@ img {
     max-width: 1200px; /* 기존 값 유지 */
     margin: 0 auto; /* 좌우 auto → 중앙정렬 */
     padding: 0 20px; /* 원하는 양만큼 좌우 패딩 */
+    text-align: left;
   }
 
   .footer-left {
