@@ -166,98 +166,12 @@ body {
   margin-left: 50px;
 }
 
-.footer {
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  background: white;
-  padding: 10px 0;
-  border-top: 1px solid black;
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-  margin-top: 0 !important;
-  padding-top: 0 !important;
+.text-start {
+  margin-left: -10px;
 }
 
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-left: 20px;
-  margin-right: 10px;
-  align-items: flex-start;
-}
-
-.footer-top {
-  display: flex;
-  align-items: center;
-  margin-top: 60px;
-  /*margin-bottom: 5px;*/
-}
-
-.footer-left {
-  flex: 1;
-  min-width: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.footer-logo-sns {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 10px;
-}
-
-.footer-logo {
-  width: 100px;
-  height: auto;
-}
-
-.footer-sns a {
-  display: inline-block;
-  margin-right: 8px;
-}
-
-.footer-sns img {
-  width: 24px;
-  height: 24px;
-}
-
-.footer-info {
-  padding-left: 30px;
-}
-
-.footer-info p {
-  margin: 4px 0;
-}
-
-.footer-right {
-  flex: 0 0 auto;
-  margin-left: auto;
-  text-align: right;
-  margin-right: -500px;
-}
-
-.footer-menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-menu li {
-  margin-bottom: 8px;
-  text-align: right; /* 메뉴 항목 자체도 오른쪽 정렬 */
-}
-
-.footer-menu a {
-  text-decoration: none;
-  color: #333;
+.menu {
+  padding-right: 50px;
 }
 
 @media (max-width: 480px) {

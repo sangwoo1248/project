@@ -13,92 +13,9 @@ main {
   flex: 1;
 }
 
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  background: white;
-  padding: 10px 0;
+.navbar {
   border-bottom: 1px solid black;
   background-color: #ffd8df;
-}
-
-.header-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
-}
-
-.logo-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.logo {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-  margin-right: 12px;
-}
-
-.menu-icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
-  width: 30px;
-  height: 22px;
-  cursor: pointer;
-  margin-top: 10px;
-  margin-right: 20px;
-}
-
-.menu-icon span {
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: black;
-  border-radius: 2px;
-}
-
-.menu-list {
-  position: absolute;
-  top: 60px;
-  right: 20px;
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  display: none;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-}
-
-.menu-list.active {
-  display: block;
-}
-
-.menu-list ul {
-  list-style: none;
-  margin: 0;
-  padding: 10px 0;
-}
-
-.menu-list li {
-  padding: 10px 20px;
-}
-
-.menu-list li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  display: block;
-}
-
-.menu-list li:hover {
-  background-color: #f5f5f5;
 }
 
 /*애니메이션*/
@@ -186,101 +103,16 @@ main {
 }
 
 .footer {
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  background: white;
-  padding: 10px 0;
+  background-color: #ffd8df;
   border-top: 1px solid black;
-  /*margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-  margin-top: 0 !important;
-  padding-top: 0 !important;*/
 }
 
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-left: 20px;
-  margin-right: 10px;
-  align-items: flex-start;
+.text-start {
+  margin-left: -10px;
 }
 
-.footer-top {
-  display: flex;
-  align-items: center;
-  margin-top: 60px;
-  /*margin-bottom: 5px;*/
-}
-
-.footer-left {
-  flex: 1;
-  min-width: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.footer-logo-sns {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 10px;
-}
-
-.footer-logo {
-  width: 100px;
-  height: auto;
-}
-
-.footer-sns a {
-  display: inline-block;
-  margin-right: 8px;
-}
-
-.footer-sns img {
-  width: 24px;
-  height: 24px;
-}
-
-.footer-info {
-  padding-left: 30px;
-}
-
-.footer-info p {
-  margin: 4px 0;
-}
-
-.footer-right {
-  flex: 0 0 auto;
-  margin-left: auto;
-  text-align: right;
-  margin-right: -500px;
-}
-
-.footer-menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-menu li {
-  margin-bottom: 8px;
-  text-align: right; /* 메뉴 항목 자체도 오른쪽 정렬 */
-}
-
-.footer-menu a {
-  text-decoration: none;
-  color: #333;
-}
-
-.footer-menu a:hover {
-  text-decoration: underline;
+.menu {
+  padding-right: 50px;
 }
 
 @media (max-width: 480px) {
