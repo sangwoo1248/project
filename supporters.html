@@ -4,32 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/jpg" href="img/favicon.png" />
-    <title>서포터즈 신청</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/supporters.css" />
+    <title>서포터즈 신청</title>
   </head>
 
   <body>
-    <header class="header">
-      <div class="logo-container">
-        <a href="index.html">
-          <img src="img/logo.jpg" alt="로고" class="logo" />
+    <nav class="navbar">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center"
+      >
+        <a class="navbar-brand" href="index.html">
+          <img src="img/favicon.png" alt="로고" height="40" />
         </a>
-      </div>
-      <div class="menu-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
 
-      <div class="menu-list" id="menuList">
-        <ul>
-          <li><a href="#">소개</a></li>
-          <li><a href="#">프로그램</a></li>
-          <li><a href="#">콘텐츠</a></li>
-          <li><a href="#">고객센터</a></li>
-        </ul>
+        <!-- 햄버거 버튼 -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="메뉴 열기"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- 메뉴 항목 -->
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-end pe-3">
+            <li class="nav-item">
+              <a class="nav-link" href="info.html">소개</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="project.html">프로그램</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="content.html">콘텐츠</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="customer.html">고객센터</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </header>
+    </nav>
 
     <main class="main-center">
       <div class="form-container">
@@ -116,6 +141,11 @@
         </form>
       </div>
     </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
     <script src="index.js"></script>
   </body>
 </html>

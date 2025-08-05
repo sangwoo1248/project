@@ -11,9 +11,22 @@ main {
   margin-top: 20px;
 }
 
-.porster {
-  margin-top: 20px;
-  max-width: 800px;
+.hero-container {
+  position: relative;
+}
+
+.hero-container img {
+  height: 420px;
+}
+
+.hero-content {
+  position: absolute;
+  top: 63%;
+  left: 20%;
+  transform: translateY(-50%);
+  max-width: 50%; /* 텍스트 최대 너비 */
+  color: #000;
+  padding: 1rem;
 }
 
 .inline {
@@ -49,36 +62,17 @@ main {
   padding-right: 50px;
 }
 
-@media (max-width: 480px) {
-  main img {
-    max-width: 100%;
+@media (max-width: 576px) {
+  .hero-container img {
     height: auto;
-    display: block;
-    margin: 0 auto 1rem; /* 선택: 이미지 아래 여백 추가 */
   }
-
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 40px;
-    max-width: 1200px; /* 기존 값 유지 */
-    margin: 0 auto; /* 좌우 auto → 중앙정렬 */
-    padding: 0 20px; /* 원하는 양만큼 좌우 패딩 */
-    text-align: left;
-  }
-
-  .footer-left {
-    order: 1;
-    width: 100%;
-    text-align: left;
-  }
-
-  .footer-right {
-    order: 2;
-    flex: 0 0 auto;
-    margin: 0;
-    text-align: right;
+  .hero-content {
+    position: static;
+    transform: none;
+    background: none;
+    color: inherit;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 1rem;
   }
 }

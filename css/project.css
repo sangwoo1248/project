@@ -27,6 +27,12 @@
   height: 150px;
 }
 
+.circle2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 비율 유지하며 빈틈 없이 채우기 */
+}
+
 .text-start {
   margin-left: -10px;
 }
