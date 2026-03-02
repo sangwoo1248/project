@@ -46,10 +46,7 @@ const Footer: React.FC = () => {
             {/* 회사 정보 텍스트 */}
             <div className="text-sm leading-relaxed text-gray-600 font-sans">
               <p className="mb-1">
-                <strong>root</strong> | 대표이사 김가희
-              </p>
-              <p className="mb-1">
-                사업자번호 661-02-42796 | 전화번호 031-730-6222
+                <strong>root</strong>
               </p>
               <p className="mb-1">
                 경기도 성남시 분당구 성남대로 916번길 7, 703호(야탑동, 서일빌딩)
